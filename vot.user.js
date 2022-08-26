@@ -9,15 +9,15 @@
 // @icon             https://translate.yandex.ru/icons/favicon.ico
 // @require          https://code.jquery.com/jquery-3.6.0.min.js
 // @require          https://cdn.jsdelivr.net/gh/dcodeIO/protobuf.js@6.X.X/dist/protobuf.min.js
-// @resource         styles https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/styles.css
+// @resource         styles https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/styles.css
 // @grant            GM_getResourceText
 // @grant            GM_addStyle
 // @grant            GM_xmlhttpRequest
 // @grant            GM_info
-// @updateURL        https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot.user.js
-// @downloadURL      https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot.user.js
-// @supportURL       https://github.com/ilyhalight/voice-over-translation/issues
-// @homepageURL      https://github.com/ilyhalight/voice-over-translation
+// @updateURL        https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/vot.user.js
+// @downloadURL      https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/vot.user.js
+// @supportURL       https://github.com/pvarenik/voice-over-translation/issues
+// @homepageURL      https://github.com/pvarenik/voice-over-translation
 // @connect          api.browser.yandex.ru
 // ==/UserScript==
 
@@ -48,7 +48,7 @@ if (!USOV4.includes(GM_info.scriptHandler)) {
   const styles = GM_getResourceText("styles");
   GM_addStyle(styles);
 } else {
-  fetch('https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/styles.css')
+  fetch('https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/styles.css')
   .then((response) => response.text().then(styles => GM_addStyle(styles)));
 };
 
@@ -56,7 +56,7 @@ const $translationBlock = $(`
   <div class = "translationBlock">
       <span class = "translationArea" role = "button">
           <span class = "translationIAlice" tabindex = "-1">
-              <img class = "translationImageAlice" src = "https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/img/YAlice.svg">
+              <img class = "translationImageAlice" src = "https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg">
           </span>
           <span class = "translationITranslate"  tabindex = "-1">
               <img class = "translationImageTranslate" src = "https://icongr.am/entypo/language.svg?size=18&color=ffffff">
@@ -490,17 +490,17 @@ $("body").on("yt-page-data-updated", async function () {
   }
 
   function changeBackgroundError() {
-    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/img/YAliceError.svg')
+    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAliceError.svg')
     $translationImageTranslate.attr('src', 'https://icongr.am/entypo/language.svg?size=18&color=7A7A7D')
   }
 
   function changeBackgroundSuccess() {
-    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/img/YAlice.svg')
+    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg')
     $translationImageTranslate.attr('src', 'https://icongr.am/entypo/language.svg?size=18&color=A36EFF')
   }
 
   function changeBackgroundDefault() {
-    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/img/YAlice.svg')
+    $translationImageAlice.attr('src', 'https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg')
     $translationImageTranslate.attr('src', 'https://icongr.am/entypo/language.svg?size=18&color=FFFFFF')
   }
 
