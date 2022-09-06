@@ -5,7 +5,7 @@
 
 # Установка расширения:
 1. Установите расширение **[Tampermonkey](https://www.tampermonkey.net/)** (Для Safari: **[UserScripts](https://apps.apple.com/app/userscripts/id1463298887 )**)
-2. **[«Установите Скрипт»](https://raw.githubusercontent.com/ilyhalight/voice-over-translation/master/vot.user.js)**
+2. **[«Установите Скрипт»](https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/vot.user.js)**
 
 ## Примечание:
 1. Рекомендую разрешить автовоспроизведение "аудио и видео" на ютубе, чтобы избежать ошибок при работе расширения
@@ -29,4 +29,4 @@
 
 В **Safari** и **Хромоподобных браузерах** не сделано отображение градиента на слайдере громкости, но, как мне кажется, это не критично
 
-![example btn](https://github.com/ilyhalight/voice-over-translation/blob/master/img/example.png "btn")
+![example btn](https://github.com/pvarenik/voice-over-translation/blob/master/img/example.png "btn")
