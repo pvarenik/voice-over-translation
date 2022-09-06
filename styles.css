@@ -1,7 +1,7 @@
 .translationBlock {
   padding: 0.15rem 0.45rem;
   width: max-content;
-  position: relative;
+  position: sticky;
   background: #2e2f34;
   border-radius: 0.5rem;
   left: 10%;
