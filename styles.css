@@ -1,11 +1,11 @@
 .translationBlock {
   padding: 0.15rem 0.45rem;
   width: max-content;
-  position: absolute;
+  position: relative;
   background: #2e2f34;
   border-radius: 0.5rem;
   left: 10%;
-  top: 5rem;
+  top: 0.5rem;
   transform: translate(-50%);
   text-align: center;
   opacity: 0;
