@@ -52,9 +52,9 @@ if (!USOV4.includes(GM_info.scriptHandler)) {
   .then((response) => response.text().then(styles => GM_addStyle(styles)));
 };
 
-  const $translationBlock = $(`
+const $translationBlock = $(`
   <div class = "translationBlock">
-      <span class = "translationBtn" tabindex = "0"role = "button"><img class = "translationImageAlice" src = "https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg"></span>
+      <span class = "translationBtn" tabindex = "0"role = "button"><img class = "translationImageAlice" src = "https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg">+</span>
       <span class = "translationMenu" tabindex = "0" role = "button"><img class = "translationMenuIcon" src = "https://icongr.am/entypo/dots-three-vertical.svg?size=14&color=ffffff"></span>
   </div>`);
 const $translationBtn = $translationBlock.find('.translationArea > .translationBtn');
