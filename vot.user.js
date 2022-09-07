@@ -55,7 +55,7 @@ if (!USOV4.includes(GM_info.scriptHandler)) {
   const $translationBlock = $(`
   <div class = "translationBlock">
       <span class = "translationArea" role = "button">
-          <span class = "translationIAlice" tabindex = "0">
+          <span class = "translationBtn" tabindex = "0">
               <img class = "translationImageAlice" src = "https://raw.githubusercontent.com/pvarenik/voice-over-translation/master/img/YAlice.svg">
           </span>
       </span>
